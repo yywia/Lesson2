@@ -1,12 +1,12 @@
 class Person:
 
-    def __init__(self):
-        self.name = ""
-        self.health = 100
-        self.damage = 0
-        self.armor = 0
-        self.is_alive = True
-        self.cooldown = 0
+    def __init__(self, name, health, damage, armor, is_alive, cooldown):
+        self.name = name
+        self.health = health
+        self.damage = damage
+        self.armor = armor
+        self.is_alive = is_alive
+        self.cooldown = cooldown
 
     def attack(self, enemy):
         enemy.health = enemy.health - (self.damage - enemy.armor)
